@@ -1,0 +1,30 @@
+//Installer branch
+env.BRANCH = "Appsone_5.0"
+
+//Installer branch
+env.SQL_BRANCH = "new-develop"
+
+// Added the mq.server.ssl.enabled property in conf.properties file and enabled default ssl
+env.PIPELINE_BUILD_NUMBER = 323
+
+// Added the mq.server.ssl.enabled property in conf.properties file and enabled default ssl
+env.GRPC_BUILD_NUMBER = 323
+
+// Added the mq.server.ssl.enabled property in conf.properties file and enabled default ssl
+env.TRANSACTIONBROKER_BUILD_NUMBER = 323
+
+// Bug fix for online implementation
+env.COMPONENT_AGENT_BUILD_NUMBER = 323
+
+//Initial UI build
+// Bug Fixes: P0-3146, P0-3147, P0-3149 , P0-3173
+env.UI_BUILD_NUMBER = 357
+
+//Initial Logforwarder build
+env.LOGFORWARDER_BUILD_NUMBER = 224
+
+// Bug Fixes related to mapping of component and host.
+env.CONTROL_CENTER_BUILD_NUMBER = 65
+
+// Added the grpc client with ssl support
+env.JIM_BUILD_NUMBER = 82
