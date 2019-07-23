@@ -14,7 +14,7 @@ pipeline {
         stage('Verifying build number on Jenkins') {
             steps {
                 sh '''
-                        cat modulelist | grep 'BUILD_NUMBER' | while read line
+                        cat A1_modulelist | grep 'BUILD_NUMBER' | while read line
                         do
                             build_number=`echo $line | awk -F"=" '{print $2}' | tr -d " "`
                             appname=`echo $line | awk -F"=" '{print $1}' | awk -F"." '{print $2}'|tr -d " "`
