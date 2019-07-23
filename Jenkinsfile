@@ -8,6 +8,11 @@ pipeline {
         buildDiscarder(logRotator(numToKeepStr: '1'))
     }
     stages {
+        stage('Checkout') {
+            steps {
+                git branch: "master", url: 'https://github.com/xayukab/Testing.git', credentialsId: ""
+            }
+        }
         stage('Load env variables') {
             steps {
                 load "${WORKSPACE}/A1_modulelist"
