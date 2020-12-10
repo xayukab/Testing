@@ -4,6 +4,7 @@ pipeline {
         stage('COpy'){
             steps{
 		sh 'printenv'
+		sh 'echo hi'
             }
         }
     }
